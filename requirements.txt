@@ -1,0 +1,5 @@
+# Only needed to RE-BUILD the dataset (build_pseudo_paired_dataset.py).
+# The CSVs in pseudo_paired/ and faces_manifest/ are already generated.
+datasets>=2.14
+numpy>=1.24
+pandas>=2.0
