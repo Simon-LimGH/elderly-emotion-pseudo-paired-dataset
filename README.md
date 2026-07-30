@@ -23,7 +23,7 @@ PseudoPaired_Dataset/
     ├── train.csv   val.csv   test.csv
 ```
 
-**Face images are intentionally NOT included** (see *Images & licensing* below).
+**Face images are NOT included** (see *Images & licensing* below).
 The CSVs reference the faces by relative path so the dataset can be committed
 without redistributing anyone’s photograph.
 
