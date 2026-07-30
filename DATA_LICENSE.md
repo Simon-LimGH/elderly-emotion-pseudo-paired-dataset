@@ -18,7 +18,7 @@ commercially, provided you give appropriate credit (see *Citing this work* in th
   those datasets' own terms:
   - UTKFace — https://susanqq.github.io/UTKFace/ (research use)
   - FFHQ — https://github.com/NVlabs/ffhq-dataset (CC BY-NC-SA; per-image Flickr licenses)
-  - IMDB-Clean / IMDB-WIKI — academic, non-commercial use only
+  - IMDB-Clean / IMDB-WIKI — Y. Lin, J. Shen, Y. Wang, and M. Pantic, "FP-Age: Leveraging face parsing attention for facial age estimation in the wild," 
 - **Paired text** originates from the **GoEmotions** corpus (Google Research),
   released under the **Apache License 2.0**.
 - **Source code** in this repository is licensed under the **MIT License**
