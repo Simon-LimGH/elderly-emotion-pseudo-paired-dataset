@@ -23,7 +23,7 @@ PseudoPaired_Dataset/
     ├── train.csv   val.csv   test.csv
 ```
 
-**Face images are NOT included** (see *Images & licensing* below).
+**Face images are intentionally NOT included** (see *Images & licensing* below).
 The CSVs reference the faces by relative path so the dataset can be committed
 without redistributing anyone’s photograph.
 
@@ -72,6 +72,13 @@ This downloads GoEmotions from the Hugging Face Hub and regenerates
 `pseudo_paired/*.csv` from `faces_manifest/*.csv`. Given the same GoEmotions
 release, the output matches the committed CSVs (which are the canonical version).
 
+## License
+
+- **Code** (`build_pseudo_paired_dataset.py`) — MIT License (see [`LICENSE`](LICENSE)).
+- **Dataset manifests** (the CSVs in `pseudo_paired/` and `faces_manifest/`) — Creative Commons Attribution 4.0 International (CC BY 4.0), see [`DATA_LICENSE.md`](DATA_LICENSE.md).
+- **Paired text** — from the GoEmotions corpus (Google Research), Apache License 2.0.
+- **Face images** — not distributed here; each remains under its original dataset's terms (see below).
+
 ## Images & licensing
 
 The paired **text** is from **GoEmotions** (Google Research), released under the
@@ -83,16 +90,28 @@ terms:
 
 - **UTKFace** — https://susanqq.github.io/UTKFace/ (research use)
 - **FFHQ** — https://github.com/NVlabs/ffhq-dataset (CC BY-NC-SA; per-image Flickr licenses)
-- **IMDB-Clean / IMDB-WIKI** — Y. Lin, J. Shen, Y. Wang, and M. Pantic, "FP-Age: Leveraging face parsing attention for facial age estimation in the wild," 
+- **IMDB-Clean / IMDB-WIKI** — academic, non-commercial use only
 
 To obtain the faces, download the original datasets from the links above and apply
 the pre-processing used in this project; the `image_relpath` / `filename` columns
 identify each crop. Please respect each dataset’s license and do not commit the raw
 images to a public repository.
 
-## Citation
+## Citing this work
 
-If you use this dataset, please cite the source corpora:
+If you use this dataset, please cite our paper:
+
+```bibtex
+@inproceedings{lim2026elderly,
+  title     = {Elderly Emotion Detection Using a Multimodal Approach},
+  author    = {Lim, Goon Hee and Jusoh, Shaidah Binti},
+  booktitle = {Proc. IEEE Int. Conf. Artificial Intelligence in Engineering and Technology (IICAIET)},
+  year      = {2026},
+  note      = {To appear}
+}
+```
+
+Please also cite the source corpora:
 
 - D. Demszky et al., “GoEmotions: A Dataset of Fine-Grained Emotions,” ACL, 2020.
 - Z. Zhang, Y. Song, H. Qi, “UTKFace: Large Scale Face Dataset.”
